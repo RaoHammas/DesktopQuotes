@@ -345,5 +345,5 @@ ASALocalRun/
 Network Trash Folder
 Temporary Items
 .apdisk
-bin/x64/Debug/netcoreapp3.1
-obj
+bin/    # ignore bin directory
+*.obj   # ignore any files with .obj postfix
