@@ -1,9 +1,9 @@
 ﻿using System;
 using System.ComponentModel;
 using System.IO;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
-using System.Timers;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Interop;
@@ -45,6 +45,7 @@ namespace DesktopQuotes
 
         private SettingsWindow _settingsWindow;
         private DispatcherTimer Timer;
+
         public QuoteWindow()
         {
             InitializeComponent();
@@ -60,7 +61,6 @@ namespace DesktopQuotes
         private void TimerOnTick(object? sender, EventArgs e)
         {
             SetQuote();
-
         }
 
         private void ReadSettings()
@@ -84,7 +84,7 @@ namespace DesktopQuotes
                     QuoteColor = new SolidColorBrush(Colors.White),
                     QuoteFontSize = 42,
                     QuoteWidth = 450,
-                    QuoteTime = new TimeSpan(0, 1, 0, 0, 0)
+                    QuoteTime = new TimeSpan(0, 5, 0, 0, 0)
                 };
                 QuoteSettings.QuoteFirstAlphabetFontSize = QuoteSettings.QuoteFontSize * 2;
                 QuoteSettings.AuthorFontSize = QuoteSettings.QuoteFontSize / 1.5;
@@ -322,6 +322,32 @@ namespace DesktopQuotes
 
                 exStyle |= (int)ExtendedWindowStyles.WS_EX_TOOLWINDOW;
                 SetWindowLong(wndHelper.Handle, (int)GetWindowLongFields.GWL_EXSTYLE, (IntPtr)exStyle);
+
+
+                InstallMeOnStartUp();
+            }
+            catch (Exception)
+            {
+                //ignore
+            }
+        }
+
+
+        void InstallMeOnStartUp()
+        {
+            try
+            {
+                var key = Microsoft.Win32.Registry.CurrentUser.OpenSubKey(
+                    "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
+                Assembly curAssembly = Assembly.GetExecutingAssembly();
+                if (key != null)
+                {
+                    var existed = key.GetValue(curAssembly.GetName().Name);
+                    if (existed == null)
+                    {
+                        key.SetValue(curAssembly.GetName().Name, curAssembly.Location);
+                    }
+                }
             }
             catch (Exception)
             {

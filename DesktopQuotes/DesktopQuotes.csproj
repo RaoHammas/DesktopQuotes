@@ -5,10 +5,27 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWPF>true</UseWPF>
     <Platforms>AnyCPU;x64</Platforms>
+    <ApplicationIcon>quote.ico</ApplicationIcon>
+    <Authors>Rao Hammas</Authors>
+    <Company>Rao Hammas</Company>
+    <Product>Desktop Quotes</Product>
+    <Description>A simple application to show quotes on your desktop.</Description>
+    <PackageProjectUrl>https://github.com/RaoHammas/DesktopQuotes</PackageProjectUrl>
+    <PackageIcon>quote.ico</PackageIcon>
+    <PackageIconUrl />
+    <RepositoryUrl>https://github.com/RaoHammas/DesktopQuotes</RepositoryUrl>
+    <RepositoryType>Public</RepositoryType>
+    <PackageTags>Desktop, Quote, App, Windows</PackageTags>
+    <Copyright>Rao Hammas</Copyright>
+    <AssemblyName>Desktop Quotes</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="flag.png" />
+    <None Include="C:\Users\hamma\Desktop\quote.ico">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
