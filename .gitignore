@@ -347,3 +347,4 @@ Temporary Items
 .apdisk
 bin/    # ignore bin directory
 *.obj   # ignore any files with .obj postfix
+.vs/DesktopQuotes/v16/
