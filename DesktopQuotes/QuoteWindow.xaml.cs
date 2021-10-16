@@ -342,7 +342,7 @@ namespace DesktopQuotes
                 Assembly curAssembly = Assembly.GetExecutingAssembly();
                 if (key != null)
                 {
-                    var existed = key.GetValue(curAssembly.GetName().Name);
+                    var existed = key.GetValue(curAssembly.GetName().Name, curAssembly.Location);
                     if (existed == null)
                     {
                         key.SetValue(curAssembly.GetName().Name, curAssembly.Location);
