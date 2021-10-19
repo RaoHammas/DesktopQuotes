@@ -1,9 +1,9 @@
 #  <img src="https://user-images.githubusercontent.com/16499626/137559109-31f353be-3a77-4603-83c3-ad0d154588d5.png" width="40" height="40"> Desktop Quotes
 A simple application to show random quotes on your desktop.  
  
- [Download Desktop Quotes x64](https://github.com/RaoHammas/DesktopQuotes/releases/download/v.1/Desktop.Quotes.winx64.zip)  
+ [Download Desktop Quotes x64](https://github.com/RaoHammas/DesktopQuotes/releases/download/v.1/Desktop.Quotes.x64.zip)  
   
- [Download Desktop Quotes x86](https://github.com/RaoHammas/DesktopQuotes/releases/download/v.1/Desktop.Quotes.winx86.zip)  
+ [Download Desktop Quotes x86](https://github.com/RaoHammas/DesktopQuotes/releases/download/v.1/Desktop.Quotes.x86.zip)  
  
 
 ## **FEATURES**
