@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.IO;
 using System.Reflection;
 using System.Runtime.CompilerServices;
@@ -339,13 +340,22 @@ namespace DesktopQuotes
             {
                 var key = Microsoft.Win32.Registry.CurrentUser.OpenSubKey(
                     "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
-                Assembly curAssembly = Assembly.GetExecutingAssembly();
                 if (key != null)
                 {
-                    var existed = key.GetValue(curAssembly.GetName().Name, curAssembly.Location);
-                    if (existed == null)
+                    var processModule = Process.GetCurrentProcess().MainModule;
+                    if (processModule != null)
                     {
-                        key.SetValue(curAssembly.GetName().Name, curAssembly.Location);
+                        var path = processModule.FileName;
+                        var existed = key.GetValue(processModule.ModuleName);
+                        if (existed == null)
+                        {
+                            key.SetValue(processModule.ModuleName, path);
+                        }
+                        else
+                        {
+                            key.DeleteValue(processModule.ModuleName);
+                            key.SetValue(processModule.ModuleName, path);
+                        }
                     }
                 }
             }
