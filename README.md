@@ -1,24 +1,24 @@
 #  <img src="https://user-images.githubusercontent.com/16499626/137559109-31f353be-3a77-4603-83c3-ad0d154588d5.png" width="40" height="40"> Desktop Quotes
 A simple application to show random quotes on your desktop.  
  
- [Download Desktop Quotes x64](https://github.com/RaoHammas/DesktopQuotes/releases/download/v.1/Desktop.Quotes.x64.zip)  
+ [Download Desktop Quotes v2.0 x64](https://github.com/RaoHammas/DesktopQuotes/releases/download/v2.0.0/Desktop.Quotes.x64.zip)  
   
- [Download Desktop Quotes x86](https://github.com/RaoHammas/DesktopQuotes/releases/download/v.1/Desktop.Quotes.x86.zip)  
+ [Download Desktop Quotes v2.0 x86](https://github.com/RaoHammas/DesktopQuotes/releases/download/v2.0.0/Desktop.Quotes.x86.zip)  
  
 
 ## **FEATURES**
 
  
- - Shows Quote on your desktop
- - You can customize `font-size`, `Width`, `Color` of quote
- - You can set duration after which a new quote is fetched
- - Application starts automatically when windows start
+ - Shows random quotes on your desktop.
+ - You can customize `font-size`, `Width`, `Color`, `shadow` of the quote.
+ - You can set duration after which a new quote is fetched.
+ - Application starts automatically when windows start.
  - Settings can be saved and quote position on desktop is remembered.
- - lightweight and simple 1mb approximately
- - Windows 7 to windows 11 supported
+ - lightweight and simple 1mb approximately.
+ - Windows 7 to windows 11 supported.
  - **Right click on quote to open settings menu**
 
-*Powered by https://api.quotable.io*
+*Powered by [https://api.quotable.io](https://quoteslate.vercel.app/)* https://github.com/Musheer360/QuoteSlate
 
  
  
