@@ -4,7 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows7.0</TargetFramework>
     <UseWPF>true</UseWPF>
-    <Platforms>AnyCPU;x64</Platforms>
+    <Platforms>AnyCPU;x64;x86</Platforms>
     <ApplicationIcon>Images\quote.ico</ApplicationIcon>
     <Authors>Rao Hammas</Authors>
     <Company>Rao Hammas</Company>
@@ -20,6 +20,7 @@
     <AssemblyName>Desktop Quotes</AssemblyName>
     <Title>Desktop Quotes</Title>
     <Version>2.0.0.0</Version>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
   </PropertyGroup>
 
   <ItemGroup>
