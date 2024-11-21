@@ -5,31 +5,40 @@
     <TargetFramework>net8.0-windows7.0</TargetFramework>
     <UseWPF>true</UseWPF>
     <Platforms>AnyCPU;x64</Platforms>
-    <ApplicationIcon>quote.ico</ApplicationIcon>
+    <ApplicationIcon>Images\quote.ico</ApplicationIcon>
     <Authors>Rao Hammas</Authors>
     <Company>Rao Hammas</Company>
     <Product>Desktop Quotes</Product>
     <Description>A simple application to show quotes on your desktop.</Description>
     <PackageProjectUrl>https://github.com/RaoHammas/DesktopQuotes</PackageProjectUrl>
-    <PackageIcon>quote.ico</PackageIcon>
+    <PackageIcon>quote.png</PackageIcon>
     <PackageIconUrl />
     <RepositoryUrl>https://github.com/RaoHammas/DesktopQuotes</RepositoryUrl>
     <RepositoryType>Public</RepositoryType>
     <PackageTags>Desktop, Quote, App, Windows</PackageTags>
     <Copyright>Rao Hammas</Copyright>
     <AssemblyName>Desktop Quotes</AssemblyName>
+    <Title>Desktop Quotes</Title>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="flag.png" />
-    <None Include="C:\Users\hamma\Desktop\quote.ico">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
+    <None Remove="Images\quote.png" />
+    <None Remove="quotes.json" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="flag.png">
+    <Content Include="Images\flag.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\quote.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\quote.png">
+      <Pack>True</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="quotes.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
@@ -41,8 +50,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="quotes.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <None Update="Images\flag.png" Link="Images\quote.ico">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Update="Images\quote.ico">
+      <Pack>True</Pack>
     </None>
   </ItemGroup>
 

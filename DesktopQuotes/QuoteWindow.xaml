@@ -1,38 +1,73 @@
-﻿<Window x:Class="DesktopQuotes.QuoteWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:DesktopQuotes"
-        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
-        AllowsTransparency="True" WindowStyle="None" Background="Transparent" Loaded="QuoteWindow_OnLoaded"
-        Title="QuoteWindow" SizeToContent="Height" MaxWidth="1600" ShowInTaskbar="False">
-    <Window.Resources>
-        <Style TargetType="TextBlock">
-            <Setter Property="Effect">
-                <Setter.Value>
-                    <DropShadowEffect Opacity="0.2" BlurRadius="2"></DropShadowEffect>
-                </Setter.Value>
-            </Setter>
-        </Style>
-    </Window.Resources>
+﻿<Window
+    x:Class="DesktopQuotes.QuoteWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:DesktopQuotes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="QuoteWindow"
+    MaxWidth="1600"
+    d:DataContext="{d:DesignInstance local:QuoteWindow}"
+    AllowsTransparency="True"
+    Background="Transparent"
+    Icon="Images/quote.ico"
+    Loaded="QuoteWindow_OnLoaded"
+    ShowInTaskbar="False"
+    SizeToContent="Height"
+    WindowStartupLocation="CenterScreen"
+    WindowStyle="None"
+    mc:Ignorable="d">
+    <Window.Resources />
     <Border Background="Transparent" CornerRadius="5">
-        <Grid Margin="20" >
+        <Border.Style>
+            <Style TargetType="Border">
+                <Style.Triggers>
+                    <DataTrigger Binding="{Binding QuoteSettings.DropShadow}" Value="True">
+                        <Setter Property="Effect">
+                            <Setter.Value>
+                                <DropShadowEffect BlurRadius="2" Opacity="0.2" />
+                            </Setter.Value>
+                        </Setter>
+                    </DataTrigger>
+                </Style.Triggers>
+
+            </Style>
+        </Border.Style>
+        <Grid Margin="20">
             <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"></RowDefinition>
-                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
-            <TextBlock Grid.Row="0" MouseLeftButtonDown="QuoteText_MouseDown" MouseRightButtonUp="OpenSettings_Click"
-                       FontFamily="Georgia" FontWeight="Bold" FontStretch="Condensed" 
-                       Foreground="{Binding QuoteSettings.QuoteColor}" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Center" >
-                <Run FontSize="{Binding QuoteSettings.QuoteFirstAlphabetFontSize}" Text="❝"/> 
-                <Run FontSize="{Binding QuoteSettings.QuoteFirstAlphabetFontSize}" Text="{Binding Quote.QuoteFirstAlphabet}"/> 
-                <Run FontSize="{Binding QuoteSettings.QuoteFontSize}"  Text="{Binding Quote.Content}"/> 
-                <Run FontSize="{Binding QuoteSettings.QuoteFirstAlphabetFontSize}" Text="❞"/> 
+            <TextBlock
+                Grid.Row="0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontFamily="Georgia"
+                FontStretch="Condensed"
+                FontWeight="Bold"
+                Foreground="{Binding QuoteSettings.QuoteColor}"
+                MouseLeftButtonDown="QuoteText_MouseDown"
+                MouseRightButtonUp="OpenSettings_Click"
+                TextWrapping="Wrap">
+                <Run FontSize="{Binding QuoteSettings.QuoteFirstAlphabetFontSize}" Text="❝" />
+                <Run FontSize="{Binding QuoteSettings.QuoteFirstAlphabetFontSize}" Text="{Binding Quote.QuoteFirstAlphabet}" />
+                <Run FontSize="{Binding QuoteSettings.QuoteFontSize}" Text="{Binding Quote.Content}" />
+                <Run FontSize="{Binding QuoteSettings.QuoteFirstAlphabetFontSize}" Text="❞" />
             </TextBlock>
-            <TextBlock Grid.Row="1" FontSize="20" FontFamily="Georgia" FontWeight="Bold" Foreground="{Binding QuoteSettings.QuoteColor}" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Right">
-                <Run FontSize="{Binding QuoteSettings.AuthorFontSize}" Text=" - "/> 
-                <Run FontSize="{Binding QuoteSettings.AuthorFontSize}" FontStyle="Italic" FontStretch="Condensed"  Text="{Binding Quote.Author}"/>
+            <TextBlock
+                Grid.Row="1"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                FontFamily="Georgia"
+                FontWeight="Bold"
+                Foreground="{Binding QuoteSettings.QuoteColor}"
+                TextWrapping="Wrap">
+                <Run FontSize="{Binding QuoteSettings.AuthorFontSize}" Text=" - " />
+                <Run
+                    FontSize="{Binding QuoteSettings.AuthorFontSize}"
+                    FontStretch="Condensed"
+                    FontStyle="Italic"
+                    Text="{Binding Quote.Author}" />
             </TextBlock>
         </Grid>
     </Border>

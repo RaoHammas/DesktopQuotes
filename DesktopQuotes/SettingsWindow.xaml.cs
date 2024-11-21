@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.Windows;
 using System.Windows.Input;
+using DesktopQuotes.Models;
 
 namespace DesktopQuotes
 {
@@ -19,7 +20,7 @@ namespace DesktopQuotes
             SliderQuoteWindowWidth.Value = quoteSettings.QuoteWidth;
             BoxHours.Text = quoteSettings.QuoteTime.Hours.ToString();
             BoxMins.Text = quoteSettings.QuoteTime.Minutes.ToString();
-
+            CheckBoxShadowEnable.IsChecked = quoteSettings.DropShadow;
         }
 
 

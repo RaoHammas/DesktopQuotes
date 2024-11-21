@@ -1,27 +1,158 @@
 [
-    {
-        "Author": "Rumi",
-        "Id": "1",
-        "Content": "Somewhere beyond right and wrong there is a garden. I'll meet you there."
-    },
-    {
-        "Author": "Bruce Lee",
-        "Id": "2",
-        "Content": "To hell with circumstances; I create opportunities."
-    },
-    {
-        "Author": "Ralph Marston",
-        "Id": "3",
-        "Content": "Don't waste time on excuses, just get it done"
-    },
-    {
-        "Author": "Lao Tzu",
-        "Id": "4",
-        "Content": "A good traveler has no fixed plans and is not intent on arriving"
-    },
-    {
-        "Author": "Earl Nightingale",
-        "Id": "5",
-        "Content": "Never give up on a dream just because it will take time to accomplish it. Time will pass anyway"
-    }
+  {
+    "Author": "Rumi",
+    "Id": "1",
+    "Content": "Somewhere beyond right and wrong there is a garden. I'll meet you there."
+  },
+  {
+    "Author": "Bruce Lee",
+    "Id": "2",
+    "Content": "To hell with circumstances; I create opportunities."
+  },
+  {
+    "Author": "Ralph Marston",
+    "Id": "3",
+    "Content": "Don't waste time on excuses, just get it done"
+  },
+  {
+    "Author": "Lao Tzu",
+    "Id": "4",
+    "Content": "A good traveler has no fixed plans and is not intent on arriving"
+  },
+  {
+    "Author": "Earl Nightingale",
+    "Id": "5",
+    "Content": "Never give up on a dream just because it will take time to accomplish it. Time will pass anyway"
+  },
+  {
+    "Author": "Prophet Muhammad (PBUH)",
+    "Id": "6",
+    "Content": "The best among you are those who have the best manners and character."
+  },
+
+  {
+    "Author": "Albert Einstein",
+    "Id": "7",
+    "Content": "Life is like riding a bicycle. To keep your balance, you must keep moving."
+  },
+  {
+    "Author": "Maya Angelou",
+    "Id": "8",
+    "Content": "You will face many defeats in life, but never let yourself be defeated."
+  },
+  {
+    "Author": "Nelson Mandela",
+    "Id": "9",
+    "Content": "It always seems impossible until it's done."
+  },
+  {
+    "Author": "Confucius",
+    "Id": "10",
+    "Content": "It does not matter how slowly you go as long as you do not stop."
+  },
+  {
+    "Author": "Mark Twain",
+    "Id": "11",
+    "Content": "The secret of getting ahead is getting started."
+  },
+  {
+    "Author": "Prophet Muhammad (PBUH)",
+    "Id": "12",
+    "Content": "Seek knowledge from the cradle to the grave."
+  },
+  {
+    "Author": "Winston Churchill",
+    "Id": "13",
+    "Content": "Success is not final, failure is not fatal: It is the courage to continue that counts."
+  },
+  {
+    "Author": "Steve Jobs",
+    "Id": "14",
+    "Content": "Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work."
+  },
+  {
+    "Author": "Oprah Winfrey",
+    "Id": "15",
+    "Content": "The biggest adventure you can take is to live the life of your dreams."
+  },
+  {
+    "Author": "Dalai Lama",
+    "Id": "16",
+    "Content": "Happiness is not something ready made. It comes from your own actions."
+  },
+  {
+    "Author": "Helen Keller",
+    "Id": "17",
+    "Content": "Alone we can do so little; together we can do so much."
+  },
+  {
+    "Author": "Theodore Roosevelt",
+    "Id": "18",
+    "Content": "Believe you can and you're halfway there."
+  },
+  {
+    "Author": "Aristotle",
+    "Id": "19",
+    "Content": "Quality is not an act, it is a habit."
+  },
+  {
+    "Author": "Vincent Van Gogh",
+    "Id": "20",
+    "Content": "What would life be if we had no courage to attempt anything?"
+  },
+  {
+    "Author": "Prophet Muhammad (PBUH)",
+    "Id": "12",
+    "Content": "Kindness is a mark of faith, and whoever has not kindness has not faith."
+  },
+  {
+    "Author": "Henry Ford",
+    "Id": "22",
+    "Content": "Whether you think you can, or you think you can't – you're right."
+  },
+  {
+    "Author": "J.K. Rowling",
+    "Id": "23",
+    "Content": "It is our choices that show what we truly are, far more than our abilities."
+  },
+  {
+    "Author": "Albert Einstein",
+    "Id": "24",
+    "Content": "Imagination is more important than knowledge."
+  },
+  {
+    "Author": "Oscar Wilde",
+    "Id": "25",
+    "Content": "Be yourself; everyone else is already taken."
+  },
+  {
+    "Author": "Marilyn Monroe",
+    "Id": "26",
+    "Content": "Imperfection is beauty, madness is genius and it's better to be absolutely ridiculous than absolutely boring."
+  },
+  {
+    "Author": "Dr. Seuss",
+    "Id": "27",
+    "Content": "Don't cry because it's over, smile because it happened."
+  },
+  {
+    "Author": "Friedrich Nietzsche",
+    "Id": "28",
+    "Content": "That which does not kill us makes us stronger."
+  },
+  {
+    "Author": "John Lennon",
+    "Id": "29",
+    "Content": "Life is what happens when you're busy making other plans."
+  },
+  {
+    "Author": "Benjamin Franklin",
+    "Id": "30",
+    "Content": "Tell me and I forget. Teach me and I remember. Involve me and I learn."
+  },
+  {
+    "Author": "Martin Luther King Jr.",
+    "Id": "31",
+    "Content": "The time is always right to do what is right."
+  }
 ]
