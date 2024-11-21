@@ -1,0 +1,27 @@
+[
+    {
+        "Author": "Rumi",
+        "Id": "1",
+        "Content": "Somewhere beyond right and wrong there is a garden. I'll meet you there."
+    },
+    {
+        "Author": "Bruce Lee",
+        "Id": "2",
+        "Content": "To hell with circumstances; I create opportunities."
+    },
+    {
+        "Author": "Ralph Marston",
+        "Id": "3",
+        "Content": "Don't waste time on excuses, just get it done"
+    },
+    {
+        "Author": "Lao Tzu",
+        "Id": "4",
+        "Content": "A good traveler has no fixed plans and is not intent on arriving"
+    },
+    {
+        "Author": "Earl Nightingale",
+        "Id": "5",
+        "Content": "Never give up on a dream just because it will take time to accomplish it. Time will pass anyway"
+    }
+]
